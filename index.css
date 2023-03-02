@@ -1,0 +1,14 @@
+.jumbotron{
+    color:rgb(57, 59, 185);
+    background-color: azure;
+    padding: 5px;
+}
+
+footer{
+    background-color: azure;
+    margin-top: 10px;
+}
+
+footer div{
+    display: flex;
+}
