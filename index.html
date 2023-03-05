@@ -1,22 +1,25 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Demo Example</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="index.css" rel="stylesheet">
-    
-  </head>
-  <body>
-	<div class="jumbotron">
-	 <h1>Hoteles</h1>
-	</div>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo Example</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="index.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="jumbotron">
+    <h1>Hoteles</h1>
+  </div>
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="./index.html">Hoteles</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -28,6 +31,9 @@
             <a class="nav-link" href="./about.html">About</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="./precios.html">precios</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#">Terminos y condiciones</a>
           </li>
           <li class="nav-item dropdown">
@@ -37,7 +43,9 @@
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Habitacion Sencilla</a></li>
               <li><a class="dropdown-item" href="#">Habitacion Doble</a></li>
-              <li><hr class="dropdown-divider"></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
               <li><a class="dropdown-item" href="#">Habitaciones Grupo</a></li>
             </ul>
           </li>
@@ -48,8 +56,8 @@
       </div>
     </div>
   </nav>
-	
-	<div class="container">
+
+  <div class="container">
 
     <nav style="--bs-breadcrumb-divider: '>'; background-color: rgb(187, 185, 185);" aria-label="breadcrumb">
       <ol class="breadcrumb">
@@ -60,68 +68,106 @@
     <div class="row">
       <div class="col-sm-4">
         <p>
-          <h3>Como funciona</h3>
-          <p>descripcion</p>
+        <h3>Como funciona?</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+          has been the industry's
+          standard dummy text ever since the 1500s</p>
         </p>
       </div>
       <div class="col-sm">
         <p>
-          <h3>Donde puedo Reservar</h3>
-          <p>descripcion</p>
+        <h3>Donde puedo Reservar?</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+          has been the industry's
+          standard dummy text ever since the 1500s</p>
         </p>
       </div>
       <div class="col-sm">
         <p>
-          <h3>Como pago</h3>
-          <p>descripcion</p>
+        <h3>Como pago?</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+          has been the industry's
+          standard dummy text ever since the 1500s</p>
         </p>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm">
-        <p>
-          <h3>Hotel 1</h3>
-          <p>descripcion</p>
-          <button class="btn btn-success"><iconify-icon icon="ic:outline-add" flip="vertical"></iconify-icon>reservar</button>
-        </p>
+    <div class="d-flex flex-wrap flex-row-reverse">
+      <div class="card card-hotel d-flex flex-column justify-content-betweent">
+        <div class="card-body">
+          <h5 class="card-title">Hotel barcelona</h5>
+          <h6 class="card-subtitle">Espana</h6>
+          <img class="card-img-top"
+            src="https://thumbs.dreamstime.com/b/vector-dibujos-animados-hotel-icono-en-estilo-c%C3%B3mico-pictograma-de-ilustraci%C3%B3n-se%C3%B1al-torre-apartamento-negocio-splash-effect-211728135.jpg">
+          <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+            has been the industry's
+            standard dummy text ever since the 1500s</p>
+        </div>
+        <button class=" btn btn-success btn-reserva"><iconify-icon icon="ic:outline-add"
+            flip="vertical"></iconify-icon>reservar</button>
+
       </div>
-      <div class="col-sm">
-        <p>
-          <h3>Hotel 1</h3>
-          <p>descripcion</p>
-          <button class="btn btn-success">reservar</button>
-        </p>
+      <div class="card card-hotel d-flex flex-column justify-content-betweent">
+        <div class="card-body">
+          <h5 class="card-title">Hotel Buenos Aires</h5>
+          <h6 class="card-subtitle">Espana</h6>
+          <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+            has been the industry's
+            standard dummy text ever since the 1500s</p>
+        </div>
+        <button class=" btn btn-success btn-reserva"><iconify-icon icon="ic:outline-add"
+            flip="vertical"></iconify-icon>reservar</button>
+
       </div>
-      <div class="col-sm">
-        <p>
-          <h3>Hotel 1</h3>
-          <p>descripcion</p>
-          <button class="btn btn-success">reservar</button>
-        </p>
+      <div class="card card-hotel d-flex flex-column justify-content-betweent">
+        <div class="card-body">
+          <h5 class="card-title">Hotel san clemente</h5>
+          <h6 class="card-subtitle">Espana</h6>
+          <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+            has been the industry's
+            standard dummy text ever since the 1500s</p>
+        </div>
+        <button class=" btn btn-success btn-reserva"><iconify-icon icon="ic:outline-add"
+            flip="vertical"></iconify-icon>reservar</button>
+      </div>
+      <div class="card card-hotel d-flex flex-column justify-content-betweent">
+        <div class="card-body">
+          <h5 class="card-title">Hotel Mar de plata</h5>
+          <h6 class="card-subtitle">Espana</h6>
+          <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+            has been the industry's
+            standard dummy text ever since the 1500s</p>
+
+        </div><button class=" btn btn-success btn-reserva"><iconify-icon icon="ic:outline-add"
+            flip="vertical"></iconify-icon>reservar</button>
       </div>
     </div>
   </div>
   <iconify-icon icon="mdi:home-outline"></iconify-icon>
-    <footer>
-      <div class="row">
-        <div class="col-sm-4 d-flex flex-column justify-content-start">
-          <a href="http://twitter.com">twitter</a>
-          <a href="http://twitter.com">facebook</a>
-          <a href="http://twitter.com">linkedin</a>
-        </div>
-        <div class="col-sm-4 d-flex justify-content-center">
-          <address> Carrera 1, 2, 3</address>
-        </div>
-        <div class="col-sm-4 d-flex justify-content-end">
-          <a>Sobre</a>
-        </div>
+  <footer>
+    <div class="row">
+      <div class="col-sm-4 d-flex flex-column justify-content-start">
+        <a href="http://twitter.com">twitter</a>
+        <a href="http://twitter.com">facebook</a>
+        <a href="http://twitter.com">linkedin</a>
       </div>
-    </footer>
-	
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
-    <script src="node_modules/iconify-icon/dist/iconify-icon.min.js" crossorigin="anonymous"></script>
-  
-  </body>
+      <div class="col-sm-4 d-flex justify-content-center">
+        <address> Carrera 1, 2, 3</address>
+      </div>
+      <div class="col-sm-4 d-flex justify-content-end">
+        <a>Sobre</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+  <script src="node_modules/iconify-icon/dist/iconify-icon.min.js" crossorigin="anonymous"></script>
+  <!-- https://icon-sets.iconify.design/ -->
+</body>
+
 </html>
