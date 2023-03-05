@@ -6,14 +6,16 @@
     <title>Demo Example</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css" rel="stylesheet">
+    
   </head>
   <body>
 	<div class="jumbotron">
 	 <h1>Hoteles</h1>
 	</div>
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="./index.html">Navbar</a>
+      <a class="navbar-brand" href="./index.html">Hoteles</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -40,7 +42,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled">Contacto</a>
+            <a class="nav-link" href="./contacto.html">Contacto</a>
           </li>
         </ul>
       </div>
@@ -49,9 +51,9 @@
 	
 	<div class="container">
 
-    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+    <nav style="--bs-breadcrumb-divider: '>'; background-color: rgb(187, 185, 185);" aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+        <li class="breadcrumb-item"><a>Home</a></li>
       </ol>
     </nav>
 
@@ -80,25 +82,26 @@
         <p>
           <h3>Hotel 1</h3>
           <p>descripcion</p>
-          <button class="btn btn-primary">reservar</button>
+          <button class="btn btn-success"><iconify-icon icon="ic:outline-add" flip="vertical"></iconify-icon>reservar</button>
         </p>
       </div>
       <div class="col-sm">
         <p>
           <h3>Hotel 1</h3>
           <p>descripcion</p>
-          <button class="btn btn-primary">reservar</button>
+          <button class="btn btn-success">reservar</button>
         </p>
       </div>
       <div class="col-sm">
         <p>
           <h3>Hotel 1</h3>
           <p>descripcion</p>
-          <button class="btn btn-primary">reservar</button>
+          <button class="btn btn-success">reservar</button>
         </p>
       </div>
     </div>
   </div>
+  <iconify-icon icon="mdi:home-outline"></iconify-icon>
     <footer>
       <div class="row">
         <div class="col-sm-4 d-flex flex-column justify-content-start">
@@ -118,5 +121,7 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/@popperjs/core/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <script src="node_modules/iconify-icon/dist/iconify-icon.min.js" crossorigin="anonymous"></script>
+  
   </body>
 </html>

@@ -52,13 +52,45 @@
     <nav style="--bs-breadcrumb-divider: '>'; background-color: rgb(187, 185, 185);" aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">About</li>
+              <li class="breadcrumb-item active" aria-current="page">Contacto</li>
             </ol>
           </nav>
-
-    <span>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-    </span>
+    <h1>Comentarios</h1>
+    <form>
+      <div class="row">
+        <div class="form-group col-sm-6">
+          <label for="nombre">Nombre</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+        </div>
+        <div class="form-group col-sm-6">
+          <label for="apellido">apellido</label>
+          <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" class="form-control" id="email" placeholder="Ingrese su correo">
+      </div>
+      <div class="row">
+        <div class="form-group col-sm-9">
+          <label for="domicilio">Domicilio</label>
+          <input type="text" class="form-control" id="domicilio" placeholder="Ingrese su direccion">
+        </div>
+        <div class="form-group col-sm-3">
+          <label for="provincia">Provincia</label>
+          <select class="form-control" id="provincia">
+            <option>Capital federal</option>
+            <option>Buenos aires</option>
+            <option>Cordoda</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="comentario">Comentario</label>
+        <textarea name="" class="form-control" id="comentario" cols="20" rows="5"></textarea>
+      </div>
+      <button type="submit" class="btn btn-outline-primary" style="margin-top: 5px;">Enviar</button>
+    </form>
     </div>
     
   <footer>
