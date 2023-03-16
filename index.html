@@ -67,7 +67,8 @@
 
     <div class="row presentation">
       <div class="col-sm-4">
-        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#funciona" aria-expanded="false" aria-controls="multiCollapse1">Como funciona?</button>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#funciona"
+          aria-expanded="false" aria-controls="multiCollapse1">Como funciona?</button>
         <div class="col-sm-4 collapse multi-collapse col-1" id="funciona" style="width: 100%;">
           <p>
           <h3>Como funciona?</h3>
@@ -78,7 +79,8 @@
         </div>
       </div>
       <div class="col-sm-4">
-        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#reserva" aria-expanded="false" aria-controls="multiCollapse2">Donde puedo Reservar?</button>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#reserva"
+          aria-expanded="false" aria-controls="multiCollapse2">Donde puedo Reservar?</button>
         <div class="col-sm-4 collapse multi-collapse col-2" id="reserva" style="width: 100%;">
           <p>
           <h3>Donde puedo Reservar?</h3>
@@ -89,7 +91,8 @@
         </div>
       </div>
       <div class="col-sm-4">
-        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#pago" aria-expanded="false" aria-controls="multiCollapse2">Como pago?</button>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#pago"
+          aria-expanded="false" aria-controls="multiCollapse2">Como pago?</button>
         <div class="col-sm-4 collapse multi-collapse col-3" id="pago" style="width: 100%;">
           <p>
           <h3>Como pago?</h3>
@@ -100,7 +103,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="text-center">
       <img class="img-fluid rounded"
         src="https://images.unsplash.com/photo-1561501900-3701fa6a0864?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
@@ -128,6 +131,8 @@
           <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
             has been the industry's
             standard dummy text ever since the 1500s</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">Informacion</button>
         </div>
         <button class=" btn btn-success btn-reserva"><iconify-icon icon="ic:outline-add"
             flip="vertical"></iconify-icon>reservar</button>
@@ -135,7 +140,8 @@
       </div>
       <div class="card card-hotel d-flex flex-column justify-content-betweent">
         <div class="card-body">
-          <h5 class="card-title">Hotel san clemente</h5>
+          <h5 class="card-title" data-bs-toggle="tooltip" data-bs-placement="top" title="Clases de yoga gratis">Hotel
+            san clemente</h5>
           <h6 class="card-subtitle">Espana</h6>
           <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
             has been the industry's
@@ -152,7 +158,8 @@
             has been the industry's
             standard dummy text ever since the 1500s</p>
 
-        </div><button class=" btn btn-success btn-reserva"><iconify-icon icon="ic:outline-add"
+        </div><button class=" btn btn-success btn-reserva" data-bs-toggle="popover" tittle="Promociones"
+          data-bs-content="Consultar las promociones vigentes"><iconify-icon icon="ic:outline-add"
             flip="vertical"></iconify-icon>reservar</button>
       </div>
     </div>
@@ -174,6 +181,39 @@
     </div>
   </footer>
 
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Informacion</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="row mb-3">
+              <label for="nombre" class="col-sm-2 col-form-label">Nombre</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="nombre">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="submit" class="btn btn-primary">enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -183,6 +223,20 @@
     crossorigin="anonymous"></script>
   <script src="node_modules/iconify-icon/dist/iconify-icon.min.js" crossorigin="anonymous"></script>
   <!-- https://icon-sets.iconify.design/ -->
+
+  <script>
+    $(function () {
+      document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        .forEach(tooltip => {
+          new bootstrap.Tooltip(tooltip)
+        })
+
+      document.querySelectorAll('[data-bs-toggle="popover"]')
+        .forEach(popover => {
+          new bootstrap.Popover(popover)
+        })
+    });
+  </script>
 </body>
 
 </html>
