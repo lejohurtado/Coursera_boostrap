@@ -162,7 +162,7 @@
             has been the industry's
             standard dummy text ever since the 1500s</p>
           <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-            data-bs-target="#exampleModal">Informacion</button>
+            data-bs-target="#exampleModal" id="idInformacion">Informacion</button>
         </div>
         <button class=" btn btn-success btn-reserva"><iconify-icon icon="ic:outline-add"
             flip="vertical"></iconify-icon>reservar</button>
@@ -271,6 +271,24 @@
       const carousel = new bootstrap.Carousel(myCarouselElement, {
         interval: 200,
         touch: false
+      })
+
+      const myModalEl = document.getElementById('exampleModal')
+      myModalEl.addEventListener('hide.bs.modal', event => {
+        console.log('hide.bs.modal');
+      })
+      myModalEl.addEventListener('hidden.bs.modal', event => {
+        console.log('hidden.bs.modal');
+      })
+      myModalEl.addEventListener('show.bs.modal', event => {
+        console.log('show.bs.modal');
+      })
+      myModalEl.addEventListener('shown.bs.modal', event => {
+        console.log('shown.bs.modal');
+        const btnIdInformacion = document.getElementById('idInformacion');
+        btnIdInformacion.setAttribute('disabled','true');
+        $('#idInformacion').removeClass('btn-primary');
+        $('#idInformacion').addClass('btn-secondary');
       })
     });
   </script>
